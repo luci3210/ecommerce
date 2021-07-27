@@ -14,7 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'EcomFront\HomeEcomController@index')->name('myhome');
+Route::get('/', 'EcomFront\HomeEcomController@index')->name('homeView');
+Route::get('/shop-item', 'EcomFront\EcomShopController@index')->name('shopView');
 
 // public fron end route for users view
 

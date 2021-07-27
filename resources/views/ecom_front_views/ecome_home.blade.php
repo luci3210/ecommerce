@@ -1,389 +1,516 @@
 @extends('ecom_layout.ecom_front_layout')
+
+@section('headers')
+<div class="col-lg-9">
+  <div class="hero__search">
+      <div class="hero__search__form">
+          <form action="#">
+              <div class="hero__search__categories">
+                  All Categories
+                  <span class="arrow_carrot-down"></span>
+              </div>
+              <input type="text" placeholder="What do yo u need?">
+              <button type="submit" class="site-btn">SEARCH</button>
+          </form>
+      </div>
+      <div class="hero__search__phone">
+          <div class="hero__search__phone__icon">
+              <i class="fa fa-phone"></i>
+          </div>
+          <div class="hero__search__phone__text">
+              <h5>+65 11.188.888</h5>
+              <span>support 24/7 time</span>
+          </div>
+      </div>
+  </div>
+  <div class="hero__item set-bg" data-setbg="{{asset('ecom/l1.jpg')}}">
+  <!-- <div class="hero__item set-bg" data-setbg="{{asset('ecom/img/hero/banner.jpg')}}"> -->
+      <div class="hero__text">
+          <span>New Tech</span>
+          <h2>Watch <br />100% Original</h2>
+          <p>Free Pickup and Delivery Available</p>
+          <a href="#" class="primary-btn">SHOP NOW</a>
+      </div>
+  </div>
+</div>
+@endsection
 @section('content')
 
-<style>
-  .bn1{
-    background-image: url('{{asset("ecom/bn1.jpg")}}');
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  .banners-effect-1 > img:hover {
-      opacity: 0.8;
-  }
-  .modtitle > span {
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 22px;
-    color: #222;
-    line-height: 100%;
-    padding-bottom: 20px;
-    position: relative;
-    display: block;
-}
-
-.modtitle{
-  border-bottom: 1px solid #e8e8e8;
-}
-
-.modtitle span:before {
-    position: absolute;
-    content: "";
-    width: 110px;
-    height: 2px;
-    background-color: #017bc4;
-    bottom: -1px;
-    z-index: 1;
-    left: 0;
-    right: auto;
-}
-
-.image-cat > img:hover {
-    opacity: 1;
-    transform: scale(1);
-    color:#017bc4
-}
-.image-cat > img {
-    border: none;
-    border-radius: 10px;
-}
-.image-cat a {
-    text-transform: uppercase;
-    color: #555;
-    font-weight: 500;
-    font-size: 15px;
-}
-
-.image-cat p {
-    font-size: 14px;
-}
-.bg-died {
-    background-color: rgba(247,248,251,1);
-}
-</style>
 
 
-<section id="carousel-header" class="my-1">
-  <div
-    id="carouselExampleCrossfade"
-    class="carousel slide carousel-fade"
-    data-mdb-ride="carousel"
-  >
-    <div class="carousel-indicators">
-      <button
-        type="button"
-        data-mdb-target="#carouselExampleCrossfade"
-        data-mdb-slide-to="0"
-        class="active"
-        aria-current="true"
-        aria-label="Slide 1"
-      ></button>
-      <button
-        type="button"
-        data-mdb-target="#carouselExampleCrossfade"
-        data-mdb-slide-to="1"
-        aria-label="Slide 2"
-      ></button>
-      <button
-        type="button"
-        data-mdb-target="#carouselExampleCrossfade"
-        data-mdb-slide-to="2"
-        aria-label="Slide 3"
-      ></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img
-          src="{{ asset('ecom/b1.jpg')}}"
-          class="d-block w-100"
-          alt="..."
-        />
-        <div class="carousel-caption d-none d-md-block text-dark">
-          <h5>First slide label</h5>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </div>
-      </div>
-      <!-- /. car item -->
-      <div class="carousel-item ">
-        <img
-          src="{{ asset('ecom/b2.jpg')}}"
-          class="d-block w-100"
-          alt="..."
-        />
-        <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </div>
-      </div>
-      <!-- /. car item -->
-    </div>
-    <button
-      class="carousel-control-prev"
-      type="button"
-      data-mdb-target="#carouselExampleCrossfade"
-      data-mdb-slide="prev"
-    >
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button
-      class="carousel-control-next"
-      type="button"
-      data-mdb-target="#carouselExampleCrossfade"
-      data-mdb-slide="next"
-    >
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-</section>
-<!-- /.carousel section -->
-
-
-<section id="exclusive-section" class="my-3 container">
-  <div class="row">
-    <div class="col-md-6 col-sm-6 col-6 banners-effect-1">
-      <img src="{{asset('ecom/bn1.jpg')}}">
-      <!-- <div class="card bn1">
-          <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-              Some quick example text to build on the card title and make up the bulk of the
-              card's content.
-          </p>
-          <button type="button" class="btn btn-primary">Button</button>
-          </div>
-      </div> -->
-    </div>
-    <div class="col-md-6 col-sm-6 col-6 banners-effect-1">
-      <img src="{{asset('ecom/bn2.jpg')}}">
-    </div>
-  </div>
-
-</section>
-<!-- /. exclusive -->
-
-
-
-<section id="featured-section" class="container my-3">
-  <div class="row d-flex justify-content-center">
-    <div class="col-md-12 col-sm-12 col-12">
-      <h3 class="modtitle"><span>Featured Categories</span></h3>
-    </div>
-    <!-- /.title -->
-    <div class="col-md-2 col-sm-4 col-6 me-1 float-start">
-      <div class="image-cat text-center">
-        <img src="{{asset('ecom/f1.jpg')}}">
-        <a href="#" title="Health &amp; Beauty " target="_self">
-          Health &amp; Beauty
-        </a>
-        <p>2 item(s)</p>
-      </div>
-    </div>
-    <!-- /. category -->
-    <div class="col-md-2 col-sm-4 col-6 me-1 float-start">
-      <div class="image-cat text-center">
-        <img src="{{asset('ecom/f2.jpg')}}">
-        <a href="#" title="Games &amp; Gadget " target="_self">
-         Games &amp; Gadget
-        </a>
-        <p>60 item(s)</p>
-      </div>
-    </div>
-    <!-- /. category -->
-    <div class="col-md-2 col-sm-4 col-6 me-1 float-start">
-      <div class="image-cat text-center">
-        <img src="{{asset('ecom/f3.jpg')}}">
-        <a href="#" title="Console &amp; Entertainment " target="_self">
-        Console &amp; Entertainment
-        </a>
-        <p>2 item(s)</p>
-      </div>
-    </div>
-    <!-- /. category -->
-    <div class="col-md-2 col-sm-4 col-6 me-1 float-start">
-      <div class="image-cat text-center">
-        <img src="{{asset('ecom/f1.jpg')}}">
-        <a href="#" title="Health &amp; Beauty " target="_self">
-          Health &amp; Beauty
-        </a>
-        <p>2 item(s)</p>
-      </div>
-    </div>
-    <!-- /. category -->
-    <div class="col-md-2 col-sm-4 col-6 me-1 float-start">
-      <div class="image-cat text-center">
-        <img src="{{asset('ecom/f1.jpg')}}">
-        <a href="#" title="Health &amp; Beauty " target="_self">
-          Health &amp; Beauty
-        </a>
-        <p>2 item(s)</p>
-      </div>
-    </div>
-    <!-- /. category -->
-    
-  </div>
-
-</section>
-<!-- /.featured category -->
-
-
-
-
-<div class="bg-died py-2">
-  <section id="top-section" class="container">
-  <div class="row my-3">
-                <div class="col-12">
-                <h3 class="modtitle"><span>Featured products</span></h3>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <!--Card-->
-                    <div class="card align-items-center">
-                        <!--Card image-->
-                        <div class="view overlay">
-                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Vertical/13.jpg" class="img-fluid" alt="">
-                            <a>
-                                <div class="mask rgba-white-slight waves-effect waves-light"></div>
-                            </a>
+    <!-- Categories Section Begin -->
+    <section class="categories">
+        <div class="container">
+            <div class="row">
+                <div class="categories__slider owl-carousel">
+                    <div class="col-lg-3">
+                        <div class="categories__item set-bg" data-setbg="{{asset('ecom/f5.jpg')}}">
+                            <h5><a href="#">Earphone</a></h5>
                         </div>
-                        <div class="card-body text-center">
-                            <!--Category & Title-->
-                            <a href="" class="text-muted">
-                                <h5>Sport wear</h5>
-                            </a>
-                            <h5>
-                                <strong>
-                                    <a href="" class="dark-grey-text">Sweatshirt</a>
-                                </strong>
-                            </h5>
-                            <h4 class="font-weight-bold blue-text">
-                                <strong>139$</strong>
-                            </h4>
-                        </div>
-                        <!--Card content-->
                     </div>
-                    <!--Card-->
-                </div>
-                <!-- /.col -->
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <!--Card-->
-                    <div class="card align-items-center">
-                        <!--Card image-->
-                        <div class="view overlay">
-                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Vertical/13.jpg" class="img-fluid" alt="">
-                            <a>
-                                <div class="mask rgba-white-slight waves-effect waves-light"></div>
-                            </a>
+                    <div class="col-lg-3">
+                        <div class="categories__item set-bg" data-setbg="{{asset('ecom/f4.jpg')}}">
+                            <h5><a href="#">Laptops </a></h5>
                         </div>
-                        <div class="card-body text-center">
-                            <!--Category & Title-->
-                            <a href="" class="text-muted">
-                                <h5>Sport wear</h5>
-                            </a>
-                            <h5>
-                                <strong>
-                                    <a href="" class="dark-grey-text">Sweatshirt</a>
-                                </strong>
-                            </h5>
-                            <h4 class="font-weight-bold blue-text">
-                                <strong>139$</strong>
-                            </h4>
-                        </div>
-                        <!--Card content-->
                     </div>
-                    <!--Card-->
-                </div>
-                <!-- /.col -->
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <!--Card-->
-                    <div class="card align-items-center">
-                        <!--Card image-->
-                        <div class="view overlay">
-                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Vertical/13.jpg" class="img-fluid" alt="">
-                            <a>
-                                <div class="mask rgba-white-slight waves-effect waves-light"></div>
-                            </a>
+                    <div class="col-lg-3">
+                        <div class="categories__item set-bg" data-setbg="{{asset('ecom/f1.jpg')}}">
+                            <h5><a href="#">Smart Watch</a></h5>
                         </div>
-                        <div class="card-body text-center">
-                            <!--Category & Title-->
-                            <a href="" class="text-muted">
-                                <h5>Sport wear</h5>
-                            </a>
-                            <h5>
-                                <strong>
-                                    <a href="" class="dark-grey-text">Sweatshirt</a>
-                                </strong>
-                            </h5>
-                            <h4 class="font-weight-bold blue-text">
-                                <strong>139$</strong>
-                            </h4>
-                        </div>
-                        <!--Card content-->
                     </div>
-                    <!--Card-->
-                </div>
-                <!-- /.col -->
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <!--Card-->
-                    <div class="card align-items-center">
-                        <!--Card image-->
-                        <div class="view overlay">
-                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Vertical/13.jpg" class="img-fluid" alt="">
-                            <a>
-                                <div class="mask rgba-white-slight waves-effect waves-light"></div>
-                            </a>
+                    <div class="col-lg-3">
+                        <div class="categories__item set-bg" data-setbg="{{asset('ecom/f2.jpg')}}">
+                            <h5><a href="#">Entertainment</a></h5>
                         </div>
-                        <div class="card-body text-center">
-                            <!--Category & Title-->
-                            <a href="" class="text-muted">
-                                <h5>Sport wear</h5>
-                            </a>
-                            <h5>
-                                <strong>
-                                    <a href="" class="dark-grey-text">Sweatshirt</a>
-                                </strong>
-                            </h5>
-                            <h4 class="font-weight-bold blue-text">
-                                <strong>139$</strong>
-                            </h4>
-                        </div>
-                        <!--Card content-->
                     </div>
-                    <!--Card-->
+                    <div class="col-lg-3">
+                        <div class="categories__item set-bg" data-setbg="{{asset('ecom/f3.jpg')}}">
+                        <!-- <div class="categories__item set-bg" data-setbg="{{asset('ecom/img/categories/cat-5.jpg')}}"> -->
+                            <h5><a href="#">Games & console</a></h5>
+                        </div>
+                    </div>
                 </div>
-                <!-- /.col -->
-
-                
-
-
             </div>
-  </section>
-</div>
-
-<section id="exclusive-section" class="my-3 container">
-  <div class="row g-0">
-    <div class="col-md-4 col-sm-6 col-6 banners-effect-1">
-      <img src="{{asset('ecom/bn3.jpg')}}">
-    </div>
-    <div class="col-md-4 col-sm-6 col-6 ">
-      <div class="row">
-        <div class="col-12 banners-effect-1 my-2 ms-4">
-        <img src="{{asset('ecom/bn4.jpg')}}" class="w-100">
         </div>
-        <div class="col-12 banners-effect-1 my-2 ms-4">
-        <img src="{{asset('ecom/bn5.jpg')}}" class="w-100">
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4 col-sm-6 col-6 banners-effect-1">
-      <img class="float-end" src="{{asset('ecom/bn6.jpg')}}">
-    </div>
-  </div>
+    </section>
+    <!-- Categories Section End -->
 
-</section>
-<!-- /. exclusive -->
+    <!-- Featured Section Begin -->
+    <section class="featured spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Featured Product</h2>
+                    </div>
+                    <div class="featured__controls">
+                        <ul>
+                            <li class="active" data-filter="*">All</li>
+                            <li data-filter=".oranges">Oranges</li>
+                            <li data-filter=".fresh-meat">Fresh Meat</li>
+                            <li data-filter=".vegetables">Vegetables</li>
+                            <li data-filter=".fastfood">Fastfood</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row featured__filter">
+                <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="{{asset('ecom/img/featured/feature-1.jpg')}}">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Crab Pool Security</a></h6>
+                            <h5>$30.00</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables fastfood">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="{{asset('ecom/img/featured/feature-2.jpg')}}">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Crab Pool Security</a></h6>
+                            <h5>$30.00</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables fresh-meat">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="{{asset('ecom/img/featured/feature-3.jpg')}}">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Crab Pool Security</a></h6>
+                            <h5>$30.00</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood oranges">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="{{asset('ecom/img/featured/feature-4.jpg')}}">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Crab Pool Security</a></h6>
+                            <h5>$30.00</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix fresh-meat vegetables">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="{{asset('ecom/img/featured/feature-5.jpg')}}">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Crab Pool Security</a></h6>
+                            <h5>$30.00</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fastfood">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="{{asset('ecom/img/featured/feature-6.jpg')}}">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Crab Pool Security</a></h6>
+                            <h5>$30.00</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix fresh-meat vegetables">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="{{asset('ecom/img/featured/feature-7.jpg')}}">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Crab Pool Security</a></h6>
+                            <h5>$30.00</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood vegetables">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="{{asset('ecom/img/featured/feature-8.jpg')}}">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Crab Pool Security</a></h6>
+                            <h5>$30.00</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Featured Section End -->
+
+
+    <!-- Banner Begin -->
+    <div class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="banner__pic">
+                        <img src="{{asset('ecom/bn1.jpg')}}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="banner__pic">
+                        <img src="{{asset('ecom/bn2.jpg')}}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner End -->
+
+    <!-- Latest Product Section Begin -->
+    <section class="latest-product spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="latest-product__text">
+                        <h4>Latest Products</h4>
+                        <div class="latest-product__slider owl-carousel">
+                            <div class="latest-prdouct__slider__item">
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="{{asset('ecom/f1.jpg')}}" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Crab Pool Security</h6>
+                                        <span>$30.00</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="{{asset('ecom/f2.jpg')}}" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Crab Pool Security</h6>
+                                        <span>$30.00</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="{{asset('ecom/f3.jpg')}}" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Crab Pool Security</h6>
+                                        <span>$30.00</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="latest-prdouct__slider__item">
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="{{asset('ecom/f4.jpg')}}" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Crab Pool Security</h6>
+                                        <span>$30.00</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="{{asset('ecom/f5.jpg')}}" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Crab Pool Security</h6>
+                                        <span>$30.00</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="{{asset('ecom/f1.jpg')}}" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Crab Pool Security</h6>
+                                        <span>$30.00</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="latest-product__text">
+                        <h4>Top Rated Products</h4>
+                        <div class="latest-product__slider owl-carousel">
+                            <div class="latest-prdouct__slider__item">
+                            <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="{{asset('ecom/f1.jpg')}}" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Crab Pool Security</h6>
+                                        <span>$30.00</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="{{asset('ecom/f2.jpg')}}" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Crab Pool Security</h6>
+                                        <span>$30.00</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="{{asset('ecom/f3.jpg')}}" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Crab Pool Security</h6>
+                                        <span>$30.00</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="latest-prdouct__slider__item">
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="{{asset('ecom/f4.jpg')}}" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Crab Pool Security</h6>
+                                        <span>$30.00</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="{{asset('ecom/f5.jpg')}}" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Crab Pool Security</h6>
+                                        <span>$30.00</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="{{asset('ecom/f1.jpg')}}" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Crab Pool Security</h6>
+                                        <span>$30.00</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="latest-product__text">
+                        <h4>Review Products</h4>
+                        <div class="latest-product__slider owl-carousel">
+                            <div class="latest-prdouct__slider__item">
+                            <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="{{asset('ecom/f1.jpg')}}" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Crab Pool Security</h6>
+                                        <span>$30.00</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="{{asset('ecom/f2.jpg')}}" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Crab Pool Security</h6>
+                                        <span>$30.00</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="{{asset('ecom/f3.jpg')}}" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Crab Pool Security</h6>
+                                        <span>$30.00</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="latest-prdouct__slider__item">
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="{{asset('ecom/f4.jpg')}}" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Crab Pool Security</h6>
+                                        <span>$30.00</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="{{asset('ecom/f5.jpg')}}" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Crab Pool Security</h6>
+                                        <span>$30.00</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="{{asset('ecom/f1.jpg')}}" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Crab Pool Security</h6>
+                                        <span>$30.00</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Latest Product Section End -->
+
+
+    <!-- Blog Section Begin -->
+    <section class="from-blog spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title from-blog__title">
+                        <h2>From The Blog</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="blog__item">
+                        <div class="blog__item__pic">
+                            <img src="{{asset('ecom/img/blog/blog-1.jpg')}}" alt="">
+                        </div>
+                        <div class="blog__item__text">
+                            <ul>
+                                <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
+                                <li><i class="fa fa-comment-o"></i> 5</li>
+                            </ul>
+                            <h5><a href="#">Cooking tips make cooking simple</a></h5>
+                            <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="blog__item">
+                        <div class="blog__item__pic">
+                            <img src="{{asset('ecom/img/blog/blog-2.jpg')}}" alt="">
+                        </div>
+                        <div class="blog__item__text">
+                            <ul>
+                                <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
+                                <li><i class="fa fa-comment-o"></i> 5</li>
+                            </ul>
+                            <h5><a href="#">6 ways to prepare breakfast for 30</a></h5>
+                            <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="blog__item">
+                        <div class="blog__item__pic">
+                            <img src="{{asset('ecom/img/blog/blog-3.jpg')}}" alt="">
+                        </div>
+                        <div class="blog__item__text">
+                            <ul>
+                                <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
+                                <li><i class="fa fa-comment-o"></i> 5</li>
+                            </ul>
+                            <h5><a href="#">Visit the clean farm in the US</a></h5>
+                            <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Section End -->
+
 
 
 
 
 
 @endsection
+
+

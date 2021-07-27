@@ -5,305 +5,286 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- Font Awesome -->
-    <link
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-    rel="stylesheet"
-    />
-    <!-- Google Fonts -->
-    <link
-    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-    rel="stylesheet"
-    />
-    <!-- MDB -->
-    <link
-    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"
-    rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{{asset('ecom/css/bootstrap.min.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{asset('ecom/css/font-awesome.min.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{asset('ecom/css/elegant-icons.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{asset('ecom/css/nice-select.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{asset('ecom/css/jquery-ui.min.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{asset('ecom/css/owl.carousel.min.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{asset('ecom/css/slicknav.min.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{asset('ecom/css/style.css')}}" type="text/css">
 </head>
 
-<style>
-  body {
-    color: #666;
-    font-size: 14px;
-    line-height: 26px;
-    background-color: #fff;
-    font-family: 'Roboto', sans-serif;
-    font-size: 13px !important;
-}
-</style>
-<body class="">
-  
-
-<section>
-
-  
-</section>
-
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light container">
-  <!-- Container wrapper -->
-  <div class="container-fluid">
-    <!-- Toggle button -->
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-mdb-toggle="collapse"
-      data-mdb-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <i class="fas fa-bars"></i>
-    </button>
-
-    <!-- Collapsible wrapper -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <!-- Navbar brand -->
-      <a class="navbar-brand mt-2 mt-lg-0" href="#">
-        <img
-          src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.png"
-          height="15"
-          alt=""
-          loading="lazy"
-        />
-      </a>
-      <!-- Left links -->
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Shop</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Page</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Promo</a>
-        </li>
-      </ul>
-      <!-- Left links -->
-    </div>
-    <!-- Collapsible wrapper -->
-
-    <!-- Right elements -->
-    <div class="d-flex align-items-center">
-      <!-- Icon -->
-      <a class="text-reset me-3" href="#">
-        <i class="fas fa-shopping-cart"></i>
-      </a>
-
-      <!-- Notifications -->
-      <a
-        class="text-reset me-3 dropdown-toggle hidden-arrow"
-        href="#"
-        id="navbarDropdownMenuLink"
-        role="button"
-        data-mdb-toggle="dropdown"
-        aria-expanded="false"
-      >
-        <i class="fas fa-bell"></i>
-        <span class="badge rounded-pill badge-notification bg-danger">1</span>
-      </a>
-      <ul
-        class="dropdown-menu dropdown-menu-end"
-        aria-labelledby="navbarDropdownMenuLink"
-      >
-        <li>
-          <a class="dropdown-item" href="#">Some news</a>
-        </li>
-        <li>
-          <a class="dropdown-item" href="#">Another news</a>
-        </li>
-        <li>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </li>
-      </ul>
-
-      <!-- Avatar -->
-      <a
-        class="dropdown-toggle d-flex align-items-center hidden-arrow"
-        href="#"
-        id="navbarDropdownMenuLink"
-        role="button"
-        data-mdb-toggle="dropdown"
-        aria-expanded="false"
-      >
-        <img
-          src="https://mdbootstrap.com/img/new/avatars/2.jpg"
-          class="rounded-circle"
-          height="25"
-          alt=""
-          loading="lazy"
-        />
-      </a>
-      <ul
-        class="dropdown-menu dropdown-menu-end"
-        aria-labelledby="navbarDropdownMenuLink"
-      >
-        <li>
-          <a class="dropdown-item" href="#">My profile</a>
-        </li>
-        <li>
-          <a class="dropdown-item" href="#">Settings</a>
-        </li>
-        <li>
-          <a class="dropdown-item" href="#">Logout</a>
-        </li>
-      </ul>
-    </div>
-    <!-- Right elements -->
+<body>
+  <!-- Page Preloder -->
+  <div id="preloder">
+      <div class="loader"></div>
   </div>
-  <!-- Container wrapper -->
-</nav>
-<!-- Navbar -->
-
-
-
-@yield('content')
-
-
-
-
-
-
-
-
-<!-- Footer -->
-<footer class="text-center text-lg-start bg-light text-muted">
-  <!-- Section: Social media -->
-  <section
-    class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
-  >
-    <!-- Left -->
-    <div class="me-5 d-none d-lg-block">
-      <span>Get connected with us on social networks:</span>
-    </div>
-    <!-- Left -->
-
-    <!-- Right -->
-    <div>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-google"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
-    <!-- Right -->
-  </section>
-  <!-- Section: Social media -->
-
-  <!-- Section: Links  -->
-  <section class="">
-    <div class="container text-center text-md-start mt-5">
-      <!-- Grid row -->
-      <div class="row mt-3">
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-          <!-- Content -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            <i class="fas fa-gem me-3"></i>Company name
-          </h6>
-          <p>
-            Here you can use rows and columns to organize your footer content. Lorem ipsum
-            dolor sit amet, consectetur adipisicing elit.
-          </p>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Products
-          </h6>
-          <p>
-            <a href="#!" class="text-reset">Angular</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">React</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Vue</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Laravel</a>
-          </p>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Useful links
-          </h6>
-          <p>
-            <a href="#!" class="text-reset">Pricing</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Settings</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Orders</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Help</a>
-          </p>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Contact
-          </h6>
-          <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
-          <p>
-            <i class="fas fa-envelope me-3"></i>
-            info@example.com
-          </p>
-          <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
-        </div>
-        <!-- Grid column -->
+  <div class="humberger__menu__overlay"></div>
+  <div class="humberger__menu__wrapper">
+      <div class="humberger__menu__logo">
+          <a href="#"><img src="img/logo.png" alt=""></a>
       </div>
-      <!-- Grid row -->
-    </div>
-  </section>
-  <!-- Section: Links  -->
-
-  <!-- Copyright -->
-  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-    © 2021 Copyright:
-    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">TOURISMO.com</a>
+      <div class="humberger__menu__cart">
+          <ul>
+              <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
+              <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+          </ul>
+          <div class="header__cart__price">item: <span>$150.00</span></div>
+      </div>
+      <div class="humberger__menu__widget">
+          <div class="header__top__right__language">
+              <img src="img/language.png" alt="">
+              <div>English</div>
+              <span class="arrow_carrot-down"></span>
+              <ul>
+                  <li><a href="#">Spanis</a></li>
+                  <li><a href="#">English</a></li>
+              </ul>
+          </div>
+          <div class="header__top__right__auth">
+              <a href="#"><i class="fa fa-user"></i> Login</a>
+          </div>
+      </div>
+      <nav class="humberger__menu__nav mobile-menu">
+          <ul>
+              <li class="active"><a href="./index.html">Home</a></li>
+              <li><a href="./shop-grid.html">Shop</a></li>
+              <li><a href="#">Pages</a>
+                  <ul class="header__menu__dropdown">
+                      <li><a href="./shop-details.html">Shop Details</a></li>
+                      <li><a href="./shoping-cart.html">Shoping Cart</a></li>
+                      <li><a href="./checkout.html">Check Out</a></li>
+                      <li><a href="./blog-details.html">Blog Details</a></li>
+                  </ul>
+              </li>
+              <li><a href="./blog.html">Blog</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+          </ul>
+      </nav>
+      <div id="mobile-menu-wrap"></div>
+      <div class="header__top__right__social">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-pinterest-p"></i></a>
+      </div>
+      <div class="humberger__menu__contact">
+          <ul>
+              <li><i class="fa fa-envelope"></i> hello@colorlib.com</li>
+              <li>Free Shipping for all Order of $99</li>
+          </ul>
+      </div>
   </div>
-  <!-- Copyright -->
-</footer>
-<!-- Footer -->
+  <!-- Humberger End -->
 
+  <!-- Header Section Begin -->
+  <header class="header">
+      <div class="header__top">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-6 col-md-6">
+                      <div class="header__top__left">
+                          <ul>
+                              <li><i class="fa fa-envelope"></i> hello@colorlib.com</li>
+                              <li>Free Shipping for all Order of $99</li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6">
+                      <div class="header__top__right">
+                          <div class="header__top__right__social">
+                              <a href="#"><i class="fa fa-facebook"></i></a>
+                              <a href="#"><i class="fa fa-twitter"></i></a>
+                              <a href="#"><i class="fa fa-linkedin"></i></a>
+                              <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                          </div>
+                          <div class="header__top__right__language">
+                              <img src="img/language.png" alt="">
+                              <div>English</div>
+                              <span class="arrow_carrot-down"></span>
+                              <ul>
+                                  <li><a href="#">Spanis</a></li>
+                                  <li><a href="#">English</a></li>
+                              </ul>
+                          </div>
+                          <div class="header__top__right__auth">
+                              <a href="#"><i class="fa fa-user"></i> Login</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-3">
+                  <div class="header__logo">
+                      <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                  </div>
+              </div>
+              <div class="col-lg-6">
+                  <nav class="header__menu">
+                      <ul>
+                          <li class="active"><a href="./index.html">Home</a></li>
+                          <li><a href="./shop-grid.html">Shop</a></li>
+                          <li><a href="#">Pages</a>
+                              <ul class="header__menu__dropdown">
+                                  <li><a href="./shop-details.html">Shop Details</a></li>
+                                  <li><a href="./shoping-cart.html">Shoping Cart</a></li>
+                                  <li><a href="./checkout.html">Check Out</a></li>
+                                  <li><a href="./blog-details.html">Blog Details</a></li>
+                              </ul>
+                          </li>
+                          <li><a href="./blog.html">Blog</a></li>
+                          <li><a href="./contact.html">Contact</a></li>
+                      </ul>
+                  </nav>
+              </div>
+              <div class="col-lg-3">
+                  <div class="header__cart">
+                      <ul>
+                          <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
+                          <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+                      </ul>
+                      <div class="header__cart__price">item: <span>$150.00</span></div>
+                  </div>
+              </div>
+          </div>
+          <div class="humberger__open">
+              <i class="fa fa-bars"></i>
+          </div>
+      </div>
+  </header>
+  <!-- Header Section End -->
+  <!-- Hero Section Begin -->
+  <section class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="hero__categories">
+                        <div class="hero__categories__all">
+                            <i class="fa fa-bars"></i>
+                            <span>All departments</span>
+                        </div>
+                        <ul>
+                            <li><a href="#">Fresh Meat</a></li>
+                            <li><a href="#">Vegetables</a></li>
+                            <li><a href="#">Fruit & Nut Gifts</a></li>
+                            <li><a href="#">Fresh Berries</a></li>
+                            <li><a href="#">Ocean Foods</a></li>
+                            <li><a href="#">Butter & Eggs</a></li>
+                            <li><a href="#">Fastfood</a></li>
+                            <li><a href="#">Fresh Onion</a></li>
+                            <li><a href="#">Papayaya & Crisps</a></li>
+                            <li><a href="#">Oatmeal</a></li>
+                            <li><a href="#">Fresh Bananas</a></li>
+                        </ul>
+                    </div>
+                </div>
+                @yield('headers')
+                
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+
+  @yield('content')
+
+  <!-- Footer Section Begin -->
+  <footer class="footer spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__about__logo">
+                            <a href="./index.html"><img src="{{asset('ecom/img/logo.png')}}" alt=""></a>
+                        </div>
+                        <ul>
+                            <li>Address: 60-49 Road 11378 New York</li>
+                            <li>Phone: +65 11.188.888</li>
+                            <li>Email: hello@colorlib.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
+                    <div class="footer__widget">
+                        <h6>Useful Links</h6>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">About Our Shop</a></li>
+                            <li><a href="#">Secure Shopping</a></li>
+                            <li><a href="#">Delivery infomation</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Our Sitemap</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Who We Are</a></li>
+                            <li><a href="#">Our Services</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Innovation</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="footer__widget">
+                        <h6>Join Our Newsletter Now</h6>
+                        <p>Get E-mail updates about our latest shop and special offers.</p>
+                        <form action="#">
+                            <input type="text" placeholder="Enter your mail">
+                            <button type="submit" class="site-btn">Subscribe</button>
+                        </form>
+                        <div class="footer__widget__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer__copyright">
+                        <div class="footer__copyright__text"><p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p></div>
+                        <div class="footer__copyright__payment"><img src="img/payment-item.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+
+
+
+
+
+
+
+  <!-- Js Plugins -->
+  <script src="{{asset('ecom/js/jquery-3.3.1.min.js')}}"></script>
+  <script src="{{asset('ecom/js/bootstrap.min.js')}}"></script>
+  <script src="{{asset('ecom/js/jquery.nice-select.min.js')}}"></script>
+  <script src="{{asset('ecom/js/jquery-ui.min.js')}}"></script>
+  <script src="{{asset('ecom/js/jquery.slicknav.js')}}"></script>
+  <script src="{{asset('ecom/js/mixitup.min.js')}}"></script>
+  <script src="{{asset('ecom/js/owl.carousel.min.js')}}"></script>
+  <script src="{{asset('ecom/js/main.js')}}"></script>
     
 </body>
 
-<!-- MDB -->
-<script
-  type="text/javascript"
-  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"
-></script>
+
+
+
+
 
 </html>
