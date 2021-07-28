@@ -10,7 +10,13 @@ class EcomShopController extends Controller
     //
     public function index(Request $req)
     {
-        return view('ecom_front_views.ecome_view_item');
+        return view('ecom_front_views.shop.shop_view_item');
+
+    }
+
+    public function list(Request $req)
+    {
+        return view('ecom_front_views.shop.shop_list_item');
 
     }
 }

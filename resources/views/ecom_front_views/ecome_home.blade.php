@@ -1,37 +1,16 @@
 @extends('ecom_layout.ecom_front_layout')
 
 @section('headers')
-<div class="col-lg-9">
-  <div class="hero__search">
-      <div class="hero__search__form">
-          <form action="#">
-              <div class="hero__search__categories">
-                  All Categories
-                  <span class="arrow_carrot-down"></span>
-              </div>
-              <input type="text" placeholder="What do yo u need?">
-              <button type="submit" class="site-btn">SEARCH</button>
-          </form>
-      </div>
-      <div class="hero__search__phone">
-          <div class="hero__search__phone__icon">
-              <i class="fa fa-phone"></i>
-          </div>
-          <div class="hero__search__phone__text">
-              <h5>+65 11.188.888</h5>
-              <span>support 24/7 time</span>
-          </div>
-      </div>
-  </div>
-  <div class="hero__item set-bg" data-setbg="{{asset('ecom/l1.jpg')}}">
-  <!-- <div class="hero__item set-bg" data-setbg="{{asset('ecom/img/hero/banner.jpg')}}"> -->
-      <div class="hero__text">
-          <span>New Tech</span>
-          <h2>Watch <br />100% Original</h2>
-          <p>Free Pickup and Delivery Available</p>
-          <a href="#" class="primary-btn">SHOP NOW</a>
-      </div>
-  </div>
+
+
+<div class="hero__item set-bg" data-setbg="{{asset('ecom/l1.jpg')}}">
+<!-- <div class="hero__item set-bg" data-setbg="{{asset('ecom/img/hero/banner.jpg')}}"> -->
+    <div class="hero__text">
+        <span>New Tech</span>
+        <h2>Watch <br />100% Original</h2>
+        <p>Free Pickup and Delivery Available</p>
+        <a href="#" class="primary-btn">SHOP NOW</a>
+    </div>
 </div>
 @endsection
 @section('content')
@@ -225,12 +204,12 @@
     <div class="banner">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="col-lg-6 col-md-6 col-sm-6 mb-1">
                     <div class="banner__pic">
                         <img src="{{asset('ecom/bn1.jpg')}}" alt="">
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="col-lg-6 col-md-6 col-sm-6 mb-1">
                     <div class="banner__pic">
                         <img src="{{asset('ecom/bn2.jpg')}}" alt="">
                     </div>
