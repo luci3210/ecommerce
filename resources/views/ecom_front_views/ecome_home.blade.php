@@ -65,18 +65,18 @@
                     <div class="featured__controls">
                         <ul>
                             <li class="active" data-filter="*">All</li>
-                            <li data-filter=".oranges">Oranges</li>
-                            <li data-filter=".fresh-meat">Fresh Meat</li>
-                            <li data-filter=".vegetables">Vegetables</li>
-                            <li data-filter=".fastfood">Fastfood</li>
+                            <li data-filter=".phone">Phone</li>
+                            <li data-filter=".gadget">Gadgets</li>
+                            <li data-filter=".sounds">Sounds</li>
+                            <li data-filter=".games">Games</li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="row featured__filter">
-                <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
+                <div class="col-lg-3 col-md-4 col-sm-6 mix phone gadget">
                     <div class="featured__item">
-                        <div class="featured__item__pic set-bg" data-setbg="{{asset('ecom/img/featured/feature-1.jpg')}}">
+                        <div class="featured__item__pic set-bg" data-setbg="{{asset('ecom/f1.jpg')}}">
                             <ul class="featured__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
@@ -89,9 +89,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables fastfood">
+                <div class="col-lg-3 col-md-4 col-sm-6 mix sounds">
                     <div class="featured__item">
-                        <div class="featured__item__pic set-bg" data-setbg="{{asset('ecom/img/featured/feature-2.jpg')}}">
+                        <div class="featured__item__pic set-bg" data-setbg="{{asset('ecom/f2.jpg')}}">
                             <ul class="featured__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
@@ -104,9 +104,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables fresh-meat">
+                <div class="col-lg-3 col-md-4 col-sm-6 mix sounds gadget">
                     <div class="featured__item">
-                        <div class="featured__item__pic set-bg" data-setbg="{{asset('ecom/img/featured/feature-3.jpg')}}">
+                        <div class="featured__item__pic set-bg" data-setbg="{{asset('ecom/f3.jpg')}}">
                             <ul class="featured__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
@@ -119,9 +119,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood oranges">
+                <div class="col-lg-3 col-md-4 col-sm-6 mix games">
                     <div class="featured__item">
-                        <div class="featured__item__pic set-bg" data-setbg="{{asset('ecom/img/featured/feature-4.jpg')}}">
+                        <div class="featured__item__pic set-bg" data-setbg="{{asset('ecom/f4.jpg')}}">
                             <ul class="featured__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
@@ -134,9 +134,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix fresh-meat vegetables">
+                <div class="col-lg-3 col-md-4 col-sm-6 mix games gadget">
                     <div class="featured__item">
-                        <div class="featured__item__pic set-bg" data-setbg="{{asset('ecom/img/featured/feature-5.jpg')}}">
+                        <div class="featured__item__pic set-bg" data-setbg="{{asset('ecom/f5.jpg')}}">
                             <ul class="featured__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
@@ -149,9 +149,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fastfood">
+                <div class="col-lg-3 col-md-4 col-sm-6 mix sounds">
                     <div class="featured__item">
-                        <div class="featured__item__pic set-bg" data-setbg="{{asset('ecom/img/featured/feature-6.jpg')}}">
+                        <div class="featured__item__pic set-bg" data-setbg="{{asset('ecom/f1.jpg')}}">
                             <ul class="featured__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
@@ -164,9 +164,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix fresh-meat vegetables">
+                <div class="col-lg-3 col-md-4 col-sm-6 mix phone">
                     <div class="featured__item">
-                        <div class="featured__item__pic set-bg" data-setbg="{{asset('ecom/img/featured/feature-7.jpg')}}">
+                        <div class="featured__item__pic set-bg" data-setbg="{{asset('ecom/f2.jpg')}}">
                             <ul class="featured__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
@@ -179,9 +179,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood vegetables">
+                <div class="col-lg-3 col-md-4 col-sm-6 mix phone gadget vegetables">
                     <div class="featured__item">
-                        <div class="featured__item__pic set-bg" data-setbg="{{asset('ecom/img/featured/feature-8.jpg')}}">
+                        <div class="featured__item__pic set-bg" data-setbg="{{asset('ecom/f3.jpg')}}">
                             <ul class="featured__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>

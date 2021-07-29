@@ -19,13 +19,11 @@ Route::get('/', 'EcomFront\HomeEcomController@index')->name('homeView');
 
 Route::prefix('shop')->group(function () {
     Route::get('/view-item', 'EcomFront\EcomShopController@index')->name('shopView');
-    //view item and pass slug tag
-    Route::get('/list-item', 'EcomFront\EcomShopController@list')->name('shopList');
+    //view item and pass slug tag for related items
+    Route::get('/list-item', 'EcomFront\EcomShopController@shop_list')->name('shopList');
     //view list of item  and pass category,keyword,price,date etc
-
-
-
-
+    Route::get('/list-cart', 'EcomFront\EcomShopController@cart_list')->name('cartList');
+    Route::get('/checkout-cart', 'EcomFront\EcomShopController@cart_checkout')->name('checkout');
 
 });
 
