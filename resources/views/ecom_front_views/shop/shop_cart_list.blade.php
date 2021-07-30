@@ -40,8 +40,8 @@
                             <tbody>
                                 <tr>
                                     <td class="shoping__cart__item">
-                                        <img src="img/cart/cart-1.jpg" alt="">
-                                        <h5>Iphonr 12 pro max</h5>
+                                        <img src="{{asset('ecom/f1.jpg')}}" alt="">
+                                        <h5>Watch</h5>
                                     </td>
                                     <td class="shoping__cart__price">
                                         $55.00
@@ -62,8 +62,8 @@
                                 </tr>
                                 <tr>
                                     <td class="shoping__cart__item">
-                                        <img src="img/cart/cart-2.jpg" alt="">
-                                        <h5>Mac book air</h5>
+                                        <img src="{{asset('ecom/f4.jpg')}}" alt="">
+                                        <h5>Laptop</h5>
                                     </td>
                                     <td class="shoping__cart__price">
                                         $39.00
@@ -84,7 +84,7 @@
                                 </tr>
                                 <tr>
                                     <td class="shoping__cart__item">
-                                        <img src="img/cart/cart-3.jpg" alt="">
+                                        <img src="{{asset('ecom/f3.jpg')}}" alt="">
                                         <h5>PS 5</h5>
                                     </td>
                                     <td class="shoping__cart__price">

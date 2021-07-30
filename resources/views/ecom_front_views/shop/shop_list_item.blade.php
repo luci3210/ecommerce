@@ -129,7 +129,7 @@
                                 <h4>Latest Products</h4>
                                 <div class="latest-product__slider owl-carousel">
                                     <div class="latest-prdouct__slider__item">
-                                        <a href="#" class="latest-product__item">
+                                        <a href="{{route('shopView')}}" class="latest-product__item">
                                             <div class="latest-product__item__pic">
                                                 <!-- <img src="img/latest-product/lp-1.jpg" alt=""> -->
                                                 <img src="{{asset('ecom/f1.jpg')}}" alt="">
@@ -139,7 +139,7 @@
                                                 <span>$30.00</span>
                                             </div>
                                         </a>
-                                        <a href="#" class="latest-product__item">
+                                        <a href="{{route('shopView')}}" class="latest-product__item">
                                             <div class="latest-product__item__pic">
                                                 <img src="{{asset('ecom/f2.jpg')}}" alt="">
                                             </div>
@@ -148,7 +148,7 @@
                                                 <span>$30.00</span>
                                             </div>
                                         </a>
-                                        <a href="#" class="latest-product__item">
+                                        <a href="{{route('shopView')}}" class="latest-product__item">
                                             <div class="latest-product__item__pic">
                                                 <img src="{{asset('ecom/f3.jpg')}}" alt="">
                                             </div>
@@ -159,7 +159,7 @@
                                         </a>
                                     </div>
                                     <div class="latest-prdouct__slider__item">
-                                        <a href="#" class="latest-product__item">
+                                        <a href="{{route('shopView')}}" class="latest-product__item">
                                             <div class="latest-product__item__pic">
                                                 <img src="{{asset('ecom/f4.jpg')}}" alt="">
                                             </div>
@@ -168,7 +168,7 @@
                                                 <span>$30.00</span>
                                             </div>
                                         </a>
-                                        <a href="#" class="latest-product__item">
+                                        <a href="{{route('shopView')}}" class="latest-product__item">
                                             <div class="latest-product__item__pic">
                                                 <img src="{{asset('ecom/f5.jpg')}}" alt="">
                                             </div>
@@ -177,7 +177,7 @@
                                                 <span>$30.00</span>
                                             </div>
                                         </a>
-                                        <a href="#" class="latest-product__item">
+                                        <a href="{{route('shopView')}}" class="latest-product__item">
                                             <div class="latest-product__item__pic">
                                                 <img src="{{asset('ecom/f1.jpg')}}" alt="">
                                             </div>
@@ -207,7 +207,7 @@
                                             <ul class="product__item__pic__hover">
                                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                                <li><a href="{{route('shopView')}}"><i class="fa fa-shopping-cart"></i></a></li>
                                             </ul>
                                         </div>
                                         <div class="product__discount__item__text">
@@ -225,7 +225,7 @@
                                             <ul class="product__item__pic__hover">
                                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                                <li><a href="{{route('shopView')}}"><i class="fa fa-shopping-cart"></i></a></li>
                                             </ul>
                                         </div>
                                         <div class="product__discount__item__text">
@@ -243,7 +243,7 @@
                                             <ul class="product__item__pic__hover">
                                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                                <li><a href="{{route('shopView')}}"><i class="fa fa-shopping-cart"></i></a></li>
                                             </ul>
                                         </div>
                                         <div class="product__discount__item__text">
@@ -261,7 +261,7 @@
                                             <ul class="product__item__pic__hover">
                                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                                <li><a href="{{route('shopView')}}"><i class="fa fa-shopping-cart"></i></a></li>
                                             </ul>
                                         </div>
                                         <div class="product__discount__item__text">
@@ -279,7 +279,7 @@
                                             <ul class="product__item__pic__hover">
                                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                                <li><a href="{{route('shopView')}}"><i class="fa fa-shopping-cart"></i></a></li>
                                             </ul>
                                         </div>
                                         <div class="product__discount__item__text">
@@ -297,7 +297,7 @@
                                             <ul class="product__item__pic__hover">
                                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                                <li><a href="{{route('shopView')}}"><i class="fa fa-shopping-cart"></i></a></li>
                                             </ul>
                                         </div>
                                         <div class="product__discount__item__text">
@@ -341,11 +341,11 @@
                                     <ul class="product__item__pic__hover">
                                         <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                         <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                        <li><a href="{{route('shopView')}}"><i class="fa fa-shopping-cart"></i></a></li>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6><a href="#">Crab Pool Security</a></h6>
+                                    <h6><a href="{{route('shopView')}}">Crab Pool Security</a></h6>
                                     <h5>$30.00</h5>
                                 </div>
                             </div>
@@ -356,11 +356,11 @@
                                     <ul class="product__item__pic__hover">
                                         <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                         <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                        <li><a href="{{route('shopView')}}"><i class="fa fa-shopping-cart"></i></a></li>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6><a href="#">Crab Pool Security</a></h6>
+                                    <h6><a href="{{route('shopView')}}">Crab Pool Security</a></h6>
                                     <h5>$30.00</h5>
                                 </div>
                             </div>
@@ -371,11 +371,11 @@
                                     <ul class="product__item__pic__hover">
                                         <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                         <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                        <li><a href="{{route('shopView')}}"><i class="fa fa-shopping-cart"></i></a></li>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6><a href="#">Crab Pool Security</a></h6>
+                                    <h6><a href="{{route('shopView')}}">Crab Pool Security</a></h6>
                                     <h5>$30.00</h5>
                                 </div>
                             </div>
@@ -386,11 +386,11 @@
                                     <ul class="product__item__pic__hover">
                                         <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                         <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                        <li><a href="{{route('shopView')}}"><i class="fa fa-shopping-cart"></i></a></li>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6><a href="#">Crab Pool Security</a></h6>
+                                    <h6><a href="{{route('shopView')}}">Crab Pool Security</a></h6>
                                     <h5>$30.00</h5>
                                 </div>
                             </div>
@@ -401,11 +401,11 @@
                                     <ul class="product__item__pic__hover">
                                         <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                         <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                        <li><a href="{{route('shopView')}}"><i class="fa fa-shopping-cart"></i></a></li>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6><a href="#">Crab Pool Security</a></h6>
+                                    <h6><a href="{{route('shopView')}}">Crab Pool Security</a></h6>
                                     <h5>$30.00</h5>
                                 </div>
                             </div>
@@ -416,11 +416,11 @@
                                     <ul class="product__item__pic__hover">
                                         <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                         <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                        <li><a href="{{route('shopView')}}"><i class="fa fa-shopping-cart"></i></a></li>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6><a href="#">Crab Pool Security</a></h6>
+                                    <h6><a href="{{route('shopView')}}">Crab Pool Security</a></h6>
                                     <h5>$30.00</h5>
                                 </div>
                             </div>
@@ -431,11 +431,11 @@
                                     <ul class="product__item__pic__hover">
                                         <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                         <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                        <li><a href="{{route('shopView')}}"><i class="fa fa-shopping-cart"></i></a></li>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6><a href="#">Crab Pool Security</a></h6>
+                                    <h6><a href="{{route('shopView')}}">Crab Pool Security</a></h6>
                                     <h5>$30.00</h5>
                                 </div>
                             </div>
@@ -446,11 +446,11 @@
                                     <ul class="product__item__pic__hover">
                                         <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                         <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                        <li><a href="{{route('shopView')}}"><i class="fa fa-shopping-cart"></i></a></li>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6><a href="#">Crab Pool Security</a></h6>
+                                    <h6><a href="{{route('shopView')}}">Crab Pool Security</a></h6>
                                     <h5>$30.00</h5>
                                 </div>
                             </div>
@@ -461,11 +461,11 @@
                                     <ul class="product__item__pic__hover">
                                         <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                         <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                        <li><a href="{{route('shopView')}}"><i class="fa fa-shopping-cart"></i></a></li>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6><a href="#">Crab Pool Security</a></h6>
+                                    <h6><a href="{{route('shopView')}}">Crab Pool Security</a></h6>
                                     <h5>$30.00</h5>
                                 </div>
                             </div>
@@ -476,11 +476,11 @@
                                     <ul class="product__item__pic__hover">
                                         <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                         <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                        <li><a href="{{route('shopView')}}"><i class="fa fa-shopping-cart"></i></a></li>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6><a href="#">Crab Pool Security</a></h6>
+                                    <h6><a href="{{route('shopView')}}">Crab Pool Security</a></h6>
                                     <h5>$30.00</h5>
                                 </div>
                             </div>
@@ -491,11 +491,11 @@
                                     <ul class="product__item__pic__hover">
                                         <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                         <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                        <li><a href="{{route('shopView')}}"><i class="fa fa-shopping-cart"></i></a></li>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6><a href="#">Crab Pool Security</a></h6>
+                                    <h6><a href="{{route('shopView')}}">Crab Pool Security</a></h6>
                                     <h5>$30.00</h5>
                                 </div>
                             </div>
@@ -506,11 +506,11 @@
                                     <ul class="product__item__pic__hover">
                                         <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                         <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                        <li><a href="{{route('shopView')}}"><i class="fa fa-shopping-cart"></i></a></li>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6><a href="#">Crab Pool Security</a></h6>
+                                    <h6><a href="{{route('shopView')}}">Crab Pool Security</a></h6>
                                     <h5>$30.00</h5>
                                 </div>
                             </div>

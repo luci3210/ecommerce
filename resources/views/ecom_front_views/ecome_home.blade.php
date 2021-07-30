@@ -9,7 +9,7 @@
         <span>New Tech</span>
         <h2>Watch <br />100% Original</h2>
         <p>Free Pickup and Delivery Available</p>
-        <a href="#" class="primary-btn">SHOP NOW</a>
+        <a href="{{route('homeView')}}" class="primary-btn">SHOP NOW</a>
     </div>
 </div>
 @endsection
@@ -24,28 +24,28 @@
                 <div class="categories__slider owl-carousel">
                     <div class="col-lg-3">
                         <div class="categories__item set-bg" data-setbg="{{asset('ecom/f5.jpg')}}">
-                            <h5><a href="#">Earphone</a></h5>
+                            <h5><a href="{{route('shopView')}}">Earphone</a></h5>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="categories__item set-bg" data-setbg="{{asset('ecom/f4.jpg')}}">
-                            <h5><a href="#">Laptops </a></h5>
+                            <h5><a href="{{route('shopView')}}">Laptops </a></h5>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="categories__item set-bg" data-setbg="{{asset('ecom/f1.jpg')}}">
-                            <h5><a href="#">Smart Watch</a></h5>
+                            <h5><a href="{{route('shopView')}}">Smart Watch</a></h5>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="categories__item set-bg" data-setbg="{{asset('ecom/f2.jpg')}}">
-                            <h5><a href="#">Entertainment</a></h5>
+                            <h5><a href="{{route('shopView')}}">Entertainment</a></h5>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="categories__item set-bg" data-setbg="{{asset('ecom/f3.jpg')}}">
                         <!-- <div class="categories__item set-bg" data-setbg="{{asset('ecom/img/categories/cat-5.jpg')}}"> -->
-                            <h5><a href="#">Games & console</a></h5>
+                            <h5><a href="{{route('shopView')}}">Games & console</a></h5>
                         </div>
                     </div>
                 </div>
@@ -80,11 +80,11 @@
                             <ul class="featured__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a href="{{route('shopView')}}"><i class="fa fa-shopping-cart"></i></a></li>
                             </ul>
                         </div>
                         <div class="featured__item__text">
-                            <h6><a href="#">Crab Pool Security</a></h6>
+                            <h6><a href="{{route('shopView')}}">Crab Pool Security</a></h6>
                             <h5>$30.00</h5>
                         </div>
                     </div>
@@ -95,11 +95,11 @@
                             <ul class="featured__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a href="{{route('shopView')}}"><i class="fa fa-shopping-cart"></i></a></li>
                             </ul>
                         </div>
                         <div class="featured__item__text">
-                            <h6><a href="#">Crab Pool Security</a></h6>
+                            <h6><a href="{{route('shopView')}}">Crab Pool Security</a></h6>
                             <h5>$30.00</h5>
                         </div>
                     </div>
@@ -110,11 +110,11 @@
                             <ul class="featured__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a href="{{route('shopView')}}"><i class="fa fa-shopping-cart"></i></a></li>
                             </ul>
                         </div>
                         <div class="featured__item__text">
-                            <h6><a href="#">Crab Pool Security</a></h6>
+                            <h6><a href="{{route('shopView')}}">Crab Pool Security</a></h6>
                             <h5>$30.00</h5>
                         </div>
                     </div>
@@ -125,11 +125,11 @@
                             <ul class="featured__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a href="{{route('shopView')}}"><i class="fa fa-shopping-cart"></i></a></li>
                             </ul>
                         </div>
                         <div class="featured__item__text">
-                            <h6><a href="#">Crab Pool Security</a></h6>
+                            <h6><a href="{{route('shopView')}}">Crab Pool Security</a></h6>
                             <h5>$30.00</h5>
                         </div>
                     </div>
@@ -140,11 +140,11 @@
                             <ul class="featured__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a href="{{route('shopView')}}"><i class="fa fa-shopping-cart"></i></a></li>
                             </ul>
                         </div>
                         <div class="featured__item__text">
-                            <h6><a href="#">Crab Pool Security</a></h6>
+                            <h6><a href="{{route('shopView')}}">Crab Pool Security</a></h6>
                             <h5>$30.00</h5>
                         </div>
                     </div>
@@ -155,11 +155,11 @@
                             <ul class="featured__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a href="{{route('shopView')}}"><i class="fa fa-shopping-cart"></i></a></li>
                             </ul>
                         </div>
                         <div class="featured__item__text">
-                            <h6><a href="#">Crab Pool Security</a></h6>
+                            <h6><a href="{{route('shopView')}}">Crab Pool Security</a></h6>
                             <h5>$30.00</h5>
                         </div>
                     </div>
@@ -170,11 +170,11 @@
                             <ul class="featured__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a href="{{route('shopView')}}"><i class="fa fa-shopping-cart"></i></a></li>
                             </ul>
                         </div>
                         <div class="featured__item__text">
-                            <h6><a href="#">Crab Pool Security</a></h6>
+                            <h6><a href="{{route('shopView')}}">Crab Pool Security</a></h6>
                             <h5>$30.00</h5>
                         </div>
                     </div>
@@ -185,11 +185,11 @@
                             <ul class="featured__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a href="{{route('shopView')}}"><i class="fa fa-shopping-cart"></i></a></li>
                             </ul>
                         </div>
                         <div class="featured__item__text">
-                            <h6><a href="#">Crab Pool Security</a></h6>
+                            <h6><a href="{{route('shopView')}}">Crab Pool Security</a></h6>
                             <h5>$30.00</h5>
                         </div>
                     </div>
@@ -228,7 +228,7 @@
                         <h4>Latest Products</h4>
                         <div class="latest-product__slider owl-carousel">
                             <div class="latest-prdouct__slider__item">
-                                <a href="#" class="latest-product__item">
+                                <a href="{{route('shopView')}}" class="latest-product__item">
                                     <div class="latest-product__item__pic">
                                         <img src="{{asset('ecom/f1.jpg')}}" alt="">
                                     </div>
@@ -237,7 +237,7 @@
                                         <span>$30.00</span>
                                     </div>
                                 </a>
-                                <a href="#" class="latest-product__item">
+                                <a href="{{route('shopView')}}" class="latest-product__item">
                                     <div class="latest-product__item__pic">
                                         <img src="{{asset('ecom/f2.jpg')}}" alt="">
                                     </div>
@@ -246,7 +246,7 @@
                                         <span>$30.00</span>
                                     </div>
                                 </a>
-                                <a href="#" class="latest-product__item">
+                                <a href="{{route('shopView')}}" class="latest-product__item">
                                     <div class="latest-product__item__pic">
                                         <img src="{{asset('ecom/f3.jpg')}}" alt="">
                                     </div>
@@ -257,7 +257,7 @@
                                 </a>
                             </div>
                             <div class="latest-prdouct__slider__item">
-                                <a href="#" class="latest-product__item">
+                                <a href="{{route('shopView')}}" class="latest-product__item">
                                     <div class="latest-product__item__pic">
                                         <img src="{{asset('ecom/f4.jpg')}}" alt="">
                                     </div>
@@ -266,7 +266,7 @@
                                         <span>$30.00</span>
                                     </div>
                                 </a>
-                                <a href="#" class="latest-product__item">
+                                <a href="{{route('shopView')}}" class="latest-product__item">
                                     <div class="latest-product__item__pic">
                                         <img src="{{asset('ecom/f5.jpg')}}" alt="">
                                     </div>
@@ -275,7 +275,7 @@
                                         <span>$30.00</span>
                                     </div>
                                 </a>
-                                <a href="#" class="latest-product__item">
+                                <a href="{{route('shopView')}}" class="latest-product__item">
                                     <div class="latest-product__item__pic">
                                         <img src="{{asset('ecom/f1.jpg')}}" alt="">
                                     </div>
@@ -293,7 +293,7 @@
                         <h4>Top Rated Products</h4>
                         <div class="latest-product__slider owl-carousel">
                             <div class="latest-prdouct__slider__item">
-                            <a href="#" class="latest-product__item">
+                            <a href="{{route('shopView')}}" class="latest-product__item">
                                     <div class="latest-product__item__pic">
                                         <img src="{{asset('ecom/f1.jpg')}}" alt="">
                                     </div>
@@ -302,7 +302,7 @@
                                         <span>$30.00</span>
                                     </div>
                                 </a>
-                                <a href="#" class="latest-product__item">
+                                <a href="{{route('shopView')}}" class="latest-product__item">
                                     <div class="latest-product__item__pic">
                                         <img src="{{asset('ecom/f2.jpg')}}" alt="">
                                     </div>
@@ -311,7 +311,7 @@
                                         <span>$30.00</span>
                                     </div>
                                 </a>
-                                <a href="#" class="latest-product__item">
+                                <a href="{{route('shopView')}}" class="latest-product__item">
                                     <div class="latest-product__item__pic">
                                         <img src="{{asset('ecom/f3.jpg')}}" alt="">
                                     </div>
@@ -322,7 +322,7 @@
                                 </a>
                             </div>
                             <div class="latest-prdouct__slider__item">
-                                <a href="#" class="latest-product__item">
+                                <a href="{{route('shopView')}}" class="latest-product__item">
                                     <div class="latest-product__item__pic">
                                         <img src="{{asset('ecom/f4.jpg')}}" alt="">
                                     </div>
@@ -331,7 +331,7 @@
                                         <span>$30.00</span>
                                     </div>
                                 </a>
-                                <a href="#" class="latest-product__item">
+                                <a href="{{route('shopView')}}" class="latest-product__item">
                                     <div class="latest-product__item__pic">
                                         <img src="{{asset('ecom/f5.jpg')}}" alt="">
                                     </div>
@@ -340,7 +340,7 @@
                                         <span>$30.00</span>
                                     </div>
                                 </a>
-                                <a href="#" class="latest-product__item">
+                                <a href="{{route('shopView')}}" class="latest-product__item">
                                     <div class="latest-product__item__pic">
                                         <img src="{{asset('ecom/f1.jpg')}}" alt="">
                                     </div>
@@ -358,7 +358,7 @@
                         <h4>Review Products</h4>
                         <div class="latest-product__slider owl-carousel">
                             <div class="latest-prdouct__slider__item">
-                            <a href="#" class="latest-product__item">
+                            <a href="{{route('shopView')}}" class="latest-product__item">
                                     <div class="latest-product__item__pic">
                                         <img src="{{asset('ecom/f1.jpg')}}" alt="">
                                     </div>
@@ -367,7 +367,7 @@
                                         <span>$30.00</span>
                                     </div>
                                 </a>
-                                <a href="#" class="latest-product__item">
+                                <a href="{{route('shopView')}}" class="latest-product__item">
                                     <div class="latest-product__item__pic">
                                         <img src="{{asset('ecom/f2.jpg')}}" alt="">
                                     </div>
@@ -376,7 +376,7 @@
                                         <span>$30.00</span>
                                     </div>
                                 </a>
-                                <a href="#" class="latest-product__item">
+                                <a href="{{route('shopView')}}" class="latest-product__item">
                                     <div class="latest-product__item__pic">
                                         <img src="{{asset('ecom/f3.jpg')}}" alt="">
                                     </div>
@@ -387,7 +387,7 @@
                                 </a>
                             </div>
                             <div class="latest-prdouct__slider__item">
-                                <a href="#" class="latest-product__item">
+                                <a href="{{route('shopView')}}" class="latest-product__item">
                                     <div class="latest-product__item__pic">
                                         <img src="{{asset('ecom/f4.jpg')}}" alt="">
                                     </div>
@@ -396,7 +396,7 @@
                                         <span>$30.00</span>
                                     </div>
                                 </a>
-                                <a href="#" class="latest-product__item">
+                                <a href="{{route('shopView')}}" class="latest-product__item">
                                     <div class="latest-product__item__pic">
                                         <img src="{{asset('ecom/f5.jpg')}}" alt="">
                                     </div>
@@ -405,7 +405,7 @@
                                         <span>$30.00</span>
                                     </div>
                                 </a>
-                                <a href="#" class="latest-product__item">
+                                <a href="{{route('shopView')}}" class="latest-product__item">
                                     <div class="latest-product__item__pic">
                                         <img src="{{asset('ecom/f1.jpg')}}" alt="">
                                     </div>
